@@ -13,7 +13,7 @@ public class Main {
         long starttime = System.currentTimeMillis();
         List<Integer> values = new ArrayList<Integer>();
         try {
-            Scanner fileScanner = new Scanner(new File("E:\\Projects\\GitHubProjects\\Internet\\GPSolutionTaks\\input.txt"));
+            Scanner fileScanner = new Scanner(new File("src/files/input.txt"));
             while(fileScanner.hasNextInt()){
                 values.add(fileScanner.nextInt());
             }
@@ -29,7 +29,7 @@ public class Main {
         }
         Writer wr = null;
         try {
-            wr = new FileWriter("E:\\Projects\\GitHubProjects\\Internet\\GPSolutionTaks\\output.txt");
+            wr = new FileWriter("src/files/output.txt");
             wr.write(String.valueOf(value));
             wr.close();
         } catch (IOException e) {
